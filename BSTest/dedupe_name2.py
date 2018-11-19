@@ -25,12 +25,12 @@ cnx = pymysql.connect(host=config['rcbill_my']['host'], user=config['rcbill_my']
 q1 = 'select a.kod as kod1, a.firm as  firm1 ' \
      ' from ' \
      ' ( select kod, firm from rcbill.rcb_tclients  where firm not like "%?%" ' \
-     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" order by firm limit 10000) a ' \
+     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" order by firm) a ' \
 
 q2 = 'select a.kod as kod2, a.firm as  firm2 ' \
      ' from ' \
      ' ( select kod, firm from rcbill.rcb_tclients  where firm not like "%?%" ' \
-     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" order by firm limit 10000) a ' \
+     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" order by firm) a ' \
 
 df = pd.read_sql(q1, con=cnx)
 df2 = pd.read_sql(q2, con=cnx)
@@ -49,8 +49,10 @@ with open(file1, 'w', newline='', encoding="utf-8") as outfile:
     # writer.writeheader()
     writer.writerow(header)
 
-    for a, b in itertools.product(df['kod1'].str.replace(',','').str.strip() + '||' + (df['firm1'].str.replace(',','').str.strip()).str.upper(),
-                                  df2['kod2'].str.replace(',','').str.strip() + '||' + (df2['firm2'].str.replace(',','').str.strip()).str.upper()):
+    for a, b in itertools.product(df['kod1'].str.replace(',', '').str.strip() + '||' + (
+                            df['firm1'].str.replace(',', '').str.strip()).str.upper(),
+                                  df2['kod2'].str.replace(',', '').str.strip() + '||' + (
+                                          df2['firm2'].str.replace(',', '').str.strip()).str.upper()):
         if a != b:
             temp = (a, b)
             # print(temp)
@@ -92,15 +94,15 @@ with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
             temp2 = (kod1, firm1, kod2, firm2, score)
             writer2.writerow(temp2)
 
-        if i % 100000 == 0:
+        if i % 10000000 == 0:
             print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
 
 f.close()
 
 # dfr2.to_csv('C:\_out\custname2.csv', index=False, encoding='utf-8')
 
-os.remove(file1)
+# os.remove(file1)
 
 print("Time Elapsed 3 :" + str(time.time() - start_time))
 
-print("Ends:" + time.asctime(time.localtime(start_time)))
+print("Ends:" + time.asctime(time.localtime(time.time())))
