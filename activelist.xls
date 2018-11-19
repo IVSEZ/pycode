@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="stylesheet" type="text/css" href="RCSiteStyle_print.css" media="print">
+<TITLE>RC Billing 4.2.6</TITLE>
+
+<script>var wListSelect=null;
+if (window.top.frames.length != 0){
+	window.top.location="default.asp"
+	}
+</script>
+
+
+	<script>var ApplicationHome = '/RCBill/'</script>
+	
+</head>
+
+	<script>function go(){}</script>
+	
+
+<frameset rows="55,*" framespacing=0 border="1">
+  <frame name="banner" src="/RCBill/Advert.asp" scrolling="no" noresize target="main" tabindex=-1 
+  frameborder="0" style="border: 0 solid #000000" >
+  <frameset cols="143,*"  border="1" framespacing=0>
+    <frame name="contents" target="main" scrolling="no" frameborder=1 src="/RCBill/menu1.asp?op=RCBill" tabindex=-1 class=menu>
+    <frame name="main" src="/RCBill/Home.asp"  frameborder=1 tabindex=-1 class=main>
+  </frameset>
+  <noframes>
+  <body>
+  <p>This page uses frames, but your browser doesn't support them.</p>
+  </body>
+  </noframes>
+</frameset>
+</HTML>

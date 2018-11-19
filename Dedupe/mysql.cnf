@@ -1,0 +1,13 @@
+[rcbill]
+host = 192.168.1.166
+db = rcbill
+user = root
+pass = l3tm31n!@#mysql
+default-character-set=utf8
+
+[rcbill_my]
+host = 192.168.1.166
+db = rcbill_my
+user = root
+pass = l3tm31n!@#mysql
+default-character-set=utf8
