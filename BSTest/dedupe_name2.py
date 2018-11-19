@@ -78,7 +78,7 @@ with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
         # print('firm2:' + firm2)
         # print('score:' + str(score))
 
-        if score > 81:
+        if score > 90:
             temp2 = (kod1, firm1, kod2, firm2, score)
             writer2.writerow(temp2)
 
