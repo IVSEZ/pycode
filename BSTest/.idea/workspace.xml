@@ -4,7 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1779cbc8-c703-45d7-8c8a-179096a9bafa" name="Default" comment="" />
+    <list default="true" id="1779cbc8-c703-45d7-8c8a-179096a9bafa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="BSTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,24 +57,40 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="789763627">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1376" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1376" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="BSTest" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrape3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Anaconda3/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dedupe_fuzz1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -152,10 +171,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dedupe_name.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="38" column="70" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="70" />
+            <state relative-caret-position="-559">
+              <caret line="74" selection-start-line="74" selection-end-line="79" selection-end-column="27" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dedupe_name2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/read_file1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,6 +229,9 @@
       <find>scrape_fb</find>
       <find>from</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -233,6 +279,8 @@
         <option value="$PROJECT_DIR$/mysql2.py" />
         <option value="$PROJECT_DIR$/dedupe_name.py" />
         <option value="$PROJECT_DIR$/dedupe_fuzz1.py" />
+        <option value="$PROJECT_DIR$/read_file1.py" />
+        <option value="$PROJECT_DIR$/dedupe_name2.py" />
       </list>
     </option>
   </component>
@@ -241,6 +289,9 @@
     <option name="y" value="3" />
     <option name="width" value="1513" />
     <option name="height" value="973" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -271,7 +322,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Samples/python-web-scraping-examples-master/python-web-scraping-examples-master/bandleader.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -301,7 +352,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dedupe_fuzz1">
+  <component name="RunManager" selected="Python.dedupe_name2">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,28 +414,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="login1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BSTest" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/Anaconda3/Lib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:/Anaconda3/Lib/login1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mysql1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dedupe_name2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BSTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -396,7 +426,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dedupe_name2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -420,6 +450,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_file1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BSTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_file1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -487,19 +538,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.login1" />
       <item itemvalue="Python.mysql2" />
-      <item itemvalue="Python.mysql1" />
       <item itemvalue="Python.dedupe_fuzz1" />
       <item itemvalue="Python.dedupe_name" />
+      <item itemvalue="Python.dedupe_name2" />
+      <item itemvalue="Python.read_file1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dedupe_name2" />
+        <item itemvalue="Python.read_file1" />
         <item itemvalue="Python.dedupe_fuzz1" />
         <item itemvalue="Python.dedupe_name" />
         <item itemvalue="Python.mysql2" />
-        <item itemvalue="Python.mysql1" />
-        <item itemvalue="Python.login1" />
       </list>
     </recent_temporary>
   </component>
@@ -534,12 +585,12 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.77380955" visible="true" weight="0.30114567" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.77306545" visible="true" weight="0.30114567" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48" weight="0.39813736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49479166" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.22619048" side_tool="true" visible="true" weight="0.30114567" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.22693452" side_tool="true" visible="true" weight="0.30114567" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49181548" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49107143" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
@@ -588,20 +639,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fbsentiment1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1221">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1158">
-          <caret line="943" selection-start-line="943" selection-end-line="943" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imdbtest2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -866,16 +903,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cust1.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custname1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cust1.csv" />
+    <entry file="file://$PROJECT_DIR$/custname1.csv" />
     <entry file="file://$PROJECT_DIR$/scrape3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -939,20 +968,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dedupe_name.py">
+    <entry file="file://$PROJECT_DIR$/dedupe_fuzz1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="38" column="70" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="70" />
+        <state relative-caret-position="223">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dedupe_fuzz1.py">
+    <entry file="file://$PROJECT_DIR$/read_file1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dedupe_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-559">
+          <caret line="74" selection-start-line="74" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dedupe_name2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
