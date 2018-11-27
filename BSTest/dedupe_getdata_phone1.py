@@ -22,31 +22,35 @@ cnx = pymysql.connect(host=config['rcbill_my']['host'], user=config['rcbill_my']
                       password=config['rcbill_my']['pass'], db=config['rcbill_my']['db'], charset="utf8",
                       use_unicode=True)
 
-q1 = 'select a.kod as kod1, a.firm as  firm1, a.danno as danno1 ' \
+q1 = 'select a.kod as kod1, a.firm as  firm1, a.mphone as phone1 ' \
      ' from ' \
-     ' ( select kod, firm, danno from rcbill.rcb_tclients  where firm not like "%?%" ' \
-     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" ' \
-     ' and danno <> "" and danno not like "%999999%" ' \
-     ' and danno like "%-%" ' \
-     ' and danno not like "000-0000-0-0-00" and danno not like "999-9999-9-9-99" ' \
-     ' order by firm ) a ' \
+     ' ( 			select kod, firm, mphone from rcbill.rcb_tclients ' \
+     '       where ' \
+     '       firm not regexp "prepaid|\'?\'|close" ' \
+     '       AND ' \
+     '		mphone <> "" and mphone is not null and length(mphone)>=7 ' \
+     '       and ' \
+     '      mphone not regexp "4414243|248248-0|248248-248|248248|24800248-248|0248111111" ' \
+     '     order by firm ) a ' \
 
-q2 = 'select a.kod as kod2, a.firm as  firm2, a.danno as danno2 ' \
+q2 = 'select a.kod as kod2, a.firm as  firm2, a.mphone as phone2' \
      ' from ' \
-     ' ( select kod, firm, danno from rcbill.rcb_tclients  where firm not like "%?%" ' \
-     ' and firm not like "%close%" and firm not like "%PREPAID CARDS%" ' \
-     ' and danno <> "" and danno not like "%999999%" ' \
-     ' and danno like "%-%" ' \
-     ' and danno not like "000-0000-0-0-00" and danno not like "999-9999-9-9-99" ' \
-     ' order by firm ) a ' \
+     ' ( 			select kod, firm, mphone from rcbill.rcb_tclients ' \
+     '       where ' \
+     '       firm not regexp "prepaid|\'?\'|close" ' \
+     '       AND ' \
+     '		mphone <> "" and mphone is not null and length(mphone)>=7 ' \
+     '       and ' \
+     '      mphone not regexp "4414243|248248-0|248248-248|248248|24800248-248|0248111111" ' \
+     '     order by firm ) a ' \
 
 df = pd.read_sql(q1, con=cnx)
 df2 = pd.read_sql(q2, con=cnx)
 
-header = ["kod1||firm1||danno1", "kod2||firm2||danno2"]
-header2 = ["kod1", "firm1", "danno1", "kod2", "firm2", "danno2", "score"]
-file1 = 'C:\_out\custnin1.csv'
-file2 = 'C:\_out\custnin2.csv'
+header = ["kod1||firm1||phone1", "kod2||firm2||phone2"]
+header2 = ["kod1", "firm1", "phone1", "kod2", "firm2", "phone2", "score"]
+file1 = 'C:\_out\custphone1.csv'
+file2 = 'C:\_out\custphone2.csv'
 
 print("Time Elapsed 1 :" + str(time.time() - start_time))
 
@@ -56,11 +60,11 @@ with open(file1, 'w', newline='', encoding="utf-8") as outfile:
     writer.writerow(header)
 
     for a, b in itertools.product(df['kod1'].str.replace(',', '').str.strip() + '||' + (
-            df['firm1'].str.replace(',', '').str.strip()).str.upper() + '||' + df['danno1']
+            df['firm1'].str.replace(',', '').str.strip()).str.upper() + '||' + df['phone1']
                                 ,
                                   df2['kod2'].str.replace(',', '').str.strip() + '||' + (
                                           df2['firm2'].str.replace(',', '').str.strip()).str.upper() + '||' + df2[
-                                      'danno2']
+                                      'phone2']
                                   ):
         if a != b:
             temp = (a, b)
