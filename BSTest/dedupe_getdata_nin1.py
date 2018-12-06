@@ -50,6 +50,7 @@ file2 = 'C:\_out\custnin2.csv'
 
 print("Time Elapsed 1 :" + str(time.time() - start_time))
 
+i = 0
 with open(file1, 'w', newline='', encoding="utf-8") as outfile:
     writer = csv.writer(outfile)
 
@@ -62,12 +63,17 @@ with open(file1, 'w', newline='', encoding="utf-8") as outfile:
                                           df2['firm2'].str.replace(',', '').str.strip()).str.upper() + '||' + df2[
                                       'danno2']
                                   ):
+        i = i + 1
+        if i % 10000000 == 0:
+            print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
+
         if a != b:
             temp = (a, b)
             # print(temp)
             writer.writerow(temp)
 
-print("Time Elapsed 2 :" + str(time.time() - start_time))
+print("Total records: " + str(i))
+# print("Time Elapsed 2 :" + str(time.time() - start_time))
 
 # with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
 #     writer2 = csv.writer(outfile2)

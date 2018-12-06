@@ -31,7 +31,7 @@ q1 = 'select a.kod as kod1, a.firm as  firm1, a.mphone as phone1 ' \
      '		mphone <> "" and mphone is not null and length(mphone)>=7 ' \
      '       and ' \
      '      mphone not regexp "4414243|248248-0|248248-248|248248|24800248-248|0248111111" ' \
-     '     order by firm ) a ' \
+     '     order by firm) a ' \
 
 q2 = 'select a.kod as kod2, a.firm as  firm2, a.mphone as phone2' \
      ' from ' \
@@ -42,36 +42,43 @@ q2 = 'select a.kod as kod2, a.firm as  firm2, a.mphone as phone2' \
      '		mphone <> "" and mphone is not null and length(mphone)>=7 ' \
      '       and ' \
      '      mphone not regexp "4414243|248248-0|248248-248|248248|24800248-248|0248111111" ' \
-     '     order by firm ) a ' \
+     '     order by firm) a ' \
 
 df = pd.read_sql(q1, con=cnx)
 df2 = pd.read_sql(q2, con=cnx)
 
 header = ["kod1||firm1||phone1", "kod2||firm2||phone2"]
 header2 = ["kod1", "firm1", "phone1", "kod2", "firm2", "phone2", "score"]
-file1 = 'C:\_out\custphone1.csv'
+file1 = 'C:\_out\custphone11.csv'
 file2 = 'C:\_out\custphone2.csv'
 
 print("Time Elapsed 1 :" + str(time.time() - start_time))
 
+i = 0
 with open(file1, 'w', newline='', encoding="utf-8") as outfile:
     writer = csv.writer(outfile)
 
     writer.writerow(header)
 
     for a, b in itertools.product(df['kod1'].str.replace(',', '').str.strip() + '||' + (
-            df['firm1'].str.replace(',', '').str.strip()).str.upper() + '||' + df['phone1']
-                                ,
-                                  df2['kod2'].str.replace(',', '').str.strip() + '||' + (
-                                          df2['firm2'].str.replace(',', '').str.strip()).str.upper() + '||' + df2[
-                                      'phone2']
-                                  ):
+            df['firm1'].str.replace(',', '').str.strip()).str.upper() + '||'
+                                  + df['phone1'].str.replace(',', '-').str.replace(' ', '')
+            ,
+            df2['kod2'].str.replace(',', '').str.strip() + '||' + (
+            df2['firm2'].str.replace(',', '').str.strip()).str.upper() + '||'
+            + df2['phone2'].str.replace(',', '-').str.replace(' ', '')
+            ):
+        i = i + 1
+        if i % 10000000 == 0:
+            print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
+
         if a != b:
             temp = (a, b)
             # print(temp)
             writer.writerow(temp)
 
-print("Time Elapsed 2 :" + str(time.time() - start_time))
+print("Total records: " + str(i))
+# print("Time Elapsed 2 :" + str(time.time() - start_time))
 
 # with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
 #     writer2 = csv.writer(outfile2)

@@ -42,6 +42,7 @@ file2 = 'C:\_out\custname2.csv'
 
 print("Time Elapsed 1 :" + str(time.time() - start_time))
 
+i = 0
 with open(file1, 'w', newline='', encoding="utf-8") as outfile:
     writer = csv.writer(outfile)
 
@@ -53,51 +54,56 @@ with open(file1, 'w', newline='', encoding="utf-8") as outfile:
                             df['firm1'].str.replace(',', '').str.strip()).str.upper(),
                                   df2['kod2'].str.replace(',', '').str.strip() + '||' + (
                                           df2['firm2'].str.replace(',', '').str.strip()).str.upper()):
+        i = i + 1
+        if i % 10000000 == 0:
+            print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
+
         if a != b:
             temp = (a, b)
             # print(temp)
             writer.writerow(temp)
 
-print("Time Elapsed 2 :" + str(time.time() - start_time))
+print("Total records: " + str(i))
+# print("Time Elapsed 2 :" + str(time.time() - start_time))
 
-with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
-    writer2 = csv.writer(outfile2)
-
-    # writer = csv.DictWriter(outfile, fieldnames=["kod1", "firm1", "kod2", "firm2"])
-    # writer.writeheader()
-    writer2.writerow(header2)
-
-    f = open(file1)
-
-    # data = []
-    # dfr = pd.DataFrame()
-    next(f, None)
-    i = 0
-    for line in f:
-        i = i + 1
-        data_line = line.rstrip().split(',')
-        ele1 = data_line[0].split('||')
-        ele2 = data_line[1].split('||')
-        kod1 = ele1[0]
-        firm1 = ele1[1]
-        kod2 = ele2[0]
-        firm2 = ele2[1]
-        score = fuzz.token_set_ratio(firm1, firm2)
-
-        # print('kod1:' + kod1)
-        # print('firm1:' + firm1)
-        # print('kod2:' + kod2)
-        # print('firm2:' + firm2)
-        # print('score:' + str(score))
-
-        if score > 90:
-            temp2 = (kod1, firm1, kod2, firm2, score)
-            writer2.writerow(temp2)
-
-        if i % 10000000 == 0:
-            print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
-
-f.close()
+# with open(file2, 'w', newline='', encoding="utf-8") as outfile2:
+#     writer2 = csv.writer(outfile2)
+#
+#     # writer = csv.DictWriter(outfile, fieldnames=["kod1", "firm1", "kod2", "firm2"])
+#     # writer.writeheader()
+#     writer2.writerow(header2)
+#
+#     f = open(file1)
+#
+#     # data = []
+#     # dfr = pd.DataFrame()
+#     next(f, None)
+#     i = 0
+#     for line in f:
+#         i = i + 1
+#         data_line = line.rstrip().split(',')
+#         ele1 = data_line[0].split('||')
+#         ele2 = data_line[1].split('||')
+#         kod1 = ele1[0]
+#         firm1 = ele1[1]
+#         kod2 = ele2[0]
+#         firm2 = ele2[1]
+#         score = fuzz.token_set_ratio(firm1, firm2)
+#
+#         # print('kod1:' + kod1)
+#         # print('firm1:' + firm1)
+#         # print('kod2:' + kod2)
+#         # print('firm2:' + firm2)
+#         # print('score:' + str(score))
+#
+#         if score > 90:
+#             temp2 = (kod1, firm1, kod2, firm2, score)
+#             writer2.writerow(temp2)
+#
+#         if i % 10000000 == 0:
+#             print("Time Elapsed:" + str(i) + " - " + str(time.time() - start_time))
+#
+# f.close()
 
 # dfr2.to_csv('C:\_out\custname2.csv', index=False, encoding='utf-8')
 
