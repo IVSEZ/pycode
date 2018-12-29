@@ -1,19 +1,18 @@
 import bs4 as bs
+from bs4 import BeautifulSoup
 
 import mechanicalsoup
 
 import robobrowser
 from robobrowser import RoboBrowser
-
-#import urllib.request
-
 import requests
 
+
 browser = RoboBrowser()
-browser.open('http://app.rcboss.intelvision.sc/RCBill/menu1.asp?op=RCBill')
+browser.open('http://rcboss.intelvision.sc/RCBill/menu1.asp')
 
 # Get the signup form
-signup_form = browser.get_form('frmLogin', "lxml")
+signup_form = browser.get_form('frmLogin')
 
 
 # Fill it out
@@ -27,20 +26,29 @@ signup_form.serialize()
 # And submit
 browser.submit_form(signup_form)
 # print page
-#print(browser.parsed)
+# print(browser.parsed)
 
-#reppage = "http://rcboss.intelvision.sc/RCBill/wflow/common/report.asp?rbSubscribtionStatistics1V3=&preset=6aac706c4a742cb85e48042f57a16f09"
-#reppage = "http://rcboss.intelvision.sc/rcbill/wflow/common/report_view.asp?id=00000000000000000000000000000008"
-#reppage ="http://rcboss.intelvision.sc/rcbill/wflow/common/drill-report.asp?r=rbSubscribtionStatisticsV3_List&rowslimit=2000&periodics=1&period=2016-07-01;2016-07-01&region=&clienttype=&clientclass=&baseservice=&service=&servicerate=&promotion=&validity=&RegionsLevel3=&RegionsLevel2=&RegionsLevel1=&distributor=&state=open&u=00000000000000000000000000000008&"
-reppage="http://rcboss.intelvision.sc/RCBill/wflow/common/report.asp?rbSubscribtionStatistics1V3"
-import requests
-res = requests.get(reppage)
-res.raise_for_status()
-playFile = open('activelist.xls', 'wb')
-for chunk in res.iter_content(100000):
-        playFile.write(chunk)
+# reppage = "http://rcboss.intelvision.sc/RCBill/wflow/common/report.asp?rbSubscribtionStatistics1V3=&preset=6aac706c4a742cb85e48042f57a16f09"
+# reppage = "http://rcboss.intelvision.sc/rcbill/wflow/common/report_view.asp?id=00000000000000000000000000000008"
+# reppage ="http://rcboss.intelvision.sc/rcbill/wflow/common/drill-report.asp?r=rbSubscribtionStatisticsV3_List&rowslimit=2000&periodics=1&period=2016-07-01;2016-07-01&region=&clienttype=&clientclass=&baseservice=&service=&servicerate=&promotion=&validity=&RegionsLevel3=&RegionsLevel2=&RegionsLevel1=&distributor=&state=open&u=00000000000000000000000000000008&"
+reppage = "https://rcboss.intelvision.sc/RCBill/wflow/common/report.asp?SalesReport=&preset=296a3a13402420e525790ec44cf7028b"
 
-playFile.close()
+
+browser.open(reppage)
+
+
+
+
+
+
+#
+# res = requests.get(reppage, 'lxml')
+# res.raise_for_status()
+# playFile = open('activelist.xls', 'wb')
+# for chunk in res.iter_content(100000):
+#         playFile.write(chunk)
+#
+# playFile.close()
 # loginpage = "http://rcboss.intelvision.sc/RCBill/menu1.asp?op=RCBill"
 # reppage ="http://rcboss.intelvision.sc/rcbill/wflow/common/report_view.asp?id=00000000000000000000000000000001&preset=100749097c8560f627a565806c6773b8"
 # reppage = "https://pythonprogramming.net/parsememcparseface/"

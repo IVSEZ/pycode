@@ -45,28 +45,34 @@ df.to_csv('cust1.csv', index=False, encoding='utf-8')
 print(df.head(5))
 
 
-from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
 
 
-def fuzzy_match(x, choices, scorer, cutoff):
-    return process.extractOne(x, choices=choices, scorer=scorer, score_cutoff=cutoff)
+# from fuzzywuzzy import fuzz
+# from fuzzywuzzy import process
+#
+#
+# def fuzzy_match(x, choices, scorer, cutoff):
+#     return process.extractOne(x, choices=choices, scorer=scorer, score_cutoff=cutoff)
+#
+#
+# df1 = pd.read_csv('cust1.csv')
+# print(df1.head())
+# # df2 = pd.read_csv('cust2.csv')
+#
+#
+# def get_ratio(row):
+#     name1 = row['firm1']
+#     name2 = row['firm2']
+#     return fuzz.token_set_ratio(name1, name2)
+#
+#
+# df1['score'] = df1.apply(get_ratio, axis=1)
+# df2 = df1[df1['score']>81]
+# df2.to_csv('cust2.csv', index=False, encoding='utf-8')
 
 
-df1 = pd.read_csv('cust1.csv')
-print(df1.head())
-# df2 = pd.read_csv('cust2.csv')
 
 
-def get_ratio(row):
-    name1 = row['firm1']
-    name2 = row['firm2']
-    return fuzz.token_set_ratio(name1, name2)
-
-
-df1['score'] = df1.apply(get_ratio, axis=1)
-df2 = df1[df1['score']>81]
-df2.to_csv('cust2.csv', index=False, encoding='utf-8')
 # print(get_ratio())
 
 

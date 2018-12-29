@@ -23,7 +23,11 @@ header3 = ["kod1", "firm1", "danno1", "kod2", "firm2", "danno2", "score_r", "sco
 
 file1 = 'C:\_out\custnin1.csv'
 file2 = 'C:\_out\custnin2.csv'
-file3 = 'C:\_out\custnin3.csv'
+
+timestr = time.strftime("%Y%m%d")
+
+file3 = 'C:\_out\cust_nin_score_' + timestr + '.csv'
+# file3 = 'C:\_out\custnin3.csv'
 
 print("Time Elapsed 1 :" + str(time.time() - start_time))
 
