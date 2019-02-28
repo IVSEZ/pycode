@@ -13,7 +13,7 @@ mail.select('INBOX')
 
 # result, data = mail.uid('search', None, "BODY \"Meter Readings\"")
 # result, data = mail.uid('search', None, "ALL")
-result, data = mail.uid('search', None, '(OR (TO "philip@paphitis.co.za") (TO "philip.johnpap@gmail.com"))')
+result, data = mail.uid('search', None, '(OR (TO "") (TO ""))')
 i = len(data[0].split())  # data[0] is a space separate string
 for x in range(i):
     latest_email_uid = data[0].split()[x]  # unique ids wrt label selected
@@ -24,7 +24,7 @@ for x in range(i):
     email_message = email.message_from_bytes(raw_email)
     # print(email_message)
     to_email = email_message['To']
-    # if(to_email == 'philip.johnpap@gmail.com'):
+    # if(to_email == ''):
     print(email_message['To'] + ' === ' + email_message['Date'])
     # print(email_message['Body'])
 
