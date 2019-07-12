@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67adb07e-86c2-43cf-82a4-f37240182cd3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pycode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pycode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dedupe/get_data.bat" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +21,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BSTest/seltest1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="646">
+              <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
               <folding>
                 <element signature="e#401#410#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow/tf1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -40,10 +52,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_name.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="36" column="114" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
+              <caret line="36" selection-end-line="114" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_name.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -64,22 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_name.py">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_nin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_name.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="79" column="53" lean-forward="true" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+            <state relative-caret-position="612">
+              <caret line="49" column="23" selection-end-line="126" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -88,10 +112,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_nin.py">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_parcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            <state relative-caret-position="476">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -116,12 +152,15 @@
       <find>firm2</find>
       <find>download-repo</find>
       <find>export</find>
+      <find>danno</find>
+      <find>nin</find>
     </findStrings>
     <replaceStrings>
       <replace>writer3</replace>
       <replace>temp3</replace>
       <replace>nin1</replace>
       <replace>nin2</replace>
+      <replace>parcel</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -151,6 +190,9 @@
         <option value="$PROJECT_DIR$/Dedupe/dedupe_get_cust_phone.py" />
         <option value="$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py" />
         <option value="$PROJECT_DIR$/Dedupe/dedupe_get_cust_name.py" />
+        <option value="$PROJECT_DIR$/Dedupe/dedupe_get_cust_parcel.py" />
+        <option value="$PROJECT_DIR$/tensorflow/tf1.py" />
+        <option value="$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py" />
       </list>
     </option>
   </component>
@@ -179,7 +221,7 @@
             <path>
               <item name="pycode" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycode" type="462c0819:PsiDirectoryNode" />
-              <item name="Dedupe" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,6 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -203,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.seltest1">
+  <component name="RunManager" selected="Python.dedupe_score_cust_parcel">
     <configuration name="BSTest3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pycode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,7 +289,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dedupe_getdata_phone1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dedupe_get_cust_parcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pycode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,11 +297,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files (x86)\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BSTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Dedupe" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BSTest/dedupe_getdata_phone1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dedupe/dedupe_get_cust_parcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,7 +310,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="login1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dedupe_score_cust_parcel" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pycode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,32 +318,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files (x86)\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BSTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Dedupe" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BSTest/login1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="read_phone1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pycode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files (x86)\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BSTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="false" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BSTest/read_phone1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -330,20 +352,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tf1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pycode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow/tf1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.dedupe_getdata_phone1" />
-      <item itemvalue="Python.read_phone1" />
       <item itemvalue="Python.BSTest3" />
-      <item itemvalue="Python.login1" />
+      <item itemvalue="Python.dedupe_get_cust_parcel" />
+      <item itemvalue="Python.dedupe_score_cust_parcel" />
       <item itemvalue="Python.seltest1" />
+      <item itemvalue="Python.tf1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dedupe_score_cust_parcel" />
+        <item itemvalue="Python.dedupe_get_cust_parcel" />
+        <item itemvalue="Python.tf1" />
         <item itemvalue="Python.seltest1" />
         <item itemvalue="Python.BSTest3" />
-        <item itemvalue="Python.login1" />
-        <item itemvalue="Python.dedupe_getdata_phone1" />
-        <item itemvalue="Python.read_phone1" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +416,7 @@
     <frame x="-8" y="-8" width="1216" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.066608995" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.13754325" />
       <window_info id="Structure" order="1" sideWeight="0.5004234" side_tool="true" weight="0.15743944" />
       <window_info id="Favorites" order="2" sideWeight="0.5004234" side_tool="true" weight="0.15743944" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -385,7 +428,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49394464" weight="0.32973894" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49307957" weight="0.32973894" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45328718" side_tool="true" weight="0.32973894" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45328718" side_tool="true" weight="0.3295519" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5467128" weight="0.32973894" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -582,11 +625,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BSTest/seltest1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="646">
+          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
           <folding>
             <element signature="e#401#410#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/tf1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -600,10 +650,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_name.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="36" column="114" selection-start-line="36" selection-start-column="114" selection-end-line="36" selection-end-column="114" />
+          <caret line="36" selection-end-line="114" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_name.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -623,27 +693,27 @@
     <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_nin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <caret line="49" column="23" selection-end-line="126" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_name.py">
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_parcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        <state relative-caret-position="476">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_name.py">
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="79" column="53" lean-forward="true" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+        <state relative-caret-position="647">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
