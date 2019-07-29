@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67adb07e-86c2-43cf-82a4-f37240182cd3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pycode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pycode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dedupe/get_data.bat" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="782">
@@ -123,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+            <state relative-caret-position="442">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -210,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,12 +217,18 @@
             <path>
               <item name="pycode" type="b2602c69:ProjectViewProjectNode" />
               <item name="pycode" type="462c0819:PsiDirectoryNode" />
+              <item name="Dedupe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pycode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pycode" type="462c0819:PsiDirectoryNode" />
               <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,7 +418,7 @@
     <frame x="-8" y="-8" width="1216" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.13754325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.1401384" />
       <window_info id="Structure" order="1" sideWeight="0.5004234" side_tool="true" weight="0.15743944" />
       <window_info id="Favorites" order="2" sideWeight="0.5004234" side_tool="true" weight="0.15743944" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -428,7 +430,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49394464" weight="0.32973894" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49307957" weight="0.32973894" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45328718" side_tool="true" weight="0.3295519" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.45328718" side_tool="true" visible="true" weight="0.3295519" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5467128" weight="0.32973894" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -660,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_name.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -712,8 +704,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_score_cust_parcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        <state relative-caret-position="442">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dedupe/dedupe_get_cust_nin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
